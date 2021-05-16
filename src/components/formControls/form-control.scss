@@ -1,0 +1,44 @@
+@import '../../style/mixins.scss';
+.control-wrapper{
+    padding: 30px 0px 10px 0;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+    input{
+        border: none transparent;
+        outline: none;
+        width: 90%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16.25px;
+        line-height: 110%;
+        color: #82869A;
+        @include placeholder {
+            color: rgba(130, 134, 154, 0.5);
+        }
+    };
+    .control-label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10.5px;
+        line-height: 110%;
+        color: #82869A;
+    };
+    .control-button{
+        background: #2B7DF7;
+        border-radius: 8.75px;
+        font-size: 14px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 15px;
+
+    }
+    
+}
+.control-wrapper:last-child {
+    border: none;
+}

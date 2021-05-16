@@ -1,0 +1,121 @@
+.dash-container{
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.dash-container .dash-body{
+    flex: 1;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .dash-item{
+        background-color: #fff;
+        margin:25px;
+        border:1px solid #EEEEEE;
+        padding:15px;
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-height: 330px;
+        div{
+            color: black;
+            font-family: fantasy;
+            font-size: 15px;
+            padding-top: 10px;
+        };
+        span{
+            font-size: 15px;
+            bottom: 1px;
+            right: 1px;
+            font-style: italic;
+            color:  #82869A;
+            position: absolute;
+        };
+        img{
+            max-height: 285px;
+        }
+
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+    // @media (min-width: 1024px) {
+    //     .dash-item{
+    //         margin:3px;
+    //     }
+    // }
+    // @media (min-width: 1440px) {
+    //     .dash-item{
+    //         margin:14px;
+    //     }
+    // }
+    // @media (min-width: 1500px) {
+    //     .dash-item{
+    //         margin:8px;
+    //     }
+    // }
+    // @media (min-width: 2560px) {
+    //     .dash-item{
+    //         margin:16px;
+    //     }
+    // }
+}
+
+.loader-wrapper{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash-popup{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1a1a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popup-container{
+        width: 60vw;
+        height: 70vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        .popup-header{
+            align-self: flex-end;
+            padding-right: 13px;
+        }
+        .popup-sec1{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-height: 43vh;
+            }
+        }
+        .popup-sec2{
+            flex: 1;
+            font-size: 12px;
+            padding-left: 5px;
+            padding: 10px 18px;
+            overflow: auto;
+            .head{
+                font-size: 15px;
+                font-family: fantasy;
+                width: 130px;
+                text-align: left;
+                padding: 10px 0px;
+            }
+            .content{
+                font-style:italic;
+                text-align: left;
+            }
+        }
+    }
+}
