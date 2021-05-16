@@ -44,7 +44,7 @@ export default() => {
                 <Control 
                     type={'password'} 
                     label={'User Name'} 
-                    placeholderText={'Enter your email'} 
+                    placeholderText={'Enter your username'} 
                     value={userData.name} 
                     handleChange={(e)=>dispatch({type:'UPDATE_USER_NAME',data:e.target.value})}/>
                
